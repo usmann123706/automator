@@ -40,5 +40,12 @@
         "state": "In Progress",
         "sys_id": "d219fad89372c710c342f9cfebba10fb",
         "notified_at": "2026-08-16T13:36:44"
+    },
+    "INC9574404|Muzamil Rehman Khan": {
+        "incident_number": "INC9574404",
+        "assigned_to": "Muzamil Rehman Khan",
+        "state": "Assigned",
+        "sys_id": "10fd70acfb324350c5f5fabfaeefdc6d",
+        "notified_at": "2026-08-16T13:46:29"
     }
 }
