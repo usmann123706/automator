@@ -24,9 +24,16 @@ jobs:
 
       - name: Run Script
         env:
+          APP_ENV: ${{ secrets.APP_ENV }}
+          SERVICENOW_ASSIGNMENT_GROUP_ID: ${{ secrets.SERVICENOW_ASSIGNMENT_GROUP_ID }}
+          SERVICENOW_BASE_URL: ${{ secrets.SERVICENOW_BASE_URL }}
+          SERVICENOW_CLIENT_ID: ${{ secrets.SERVICENOW_CLIENT_ID }}
+          SERVICENOW_CLIENT_SECRET: ${{ secrets.SERVICENOW_CLIENT_SECRET }}
+          SERVICENOW_DRY_RUN: ${{ secrets.SERVICENOW_DRY_RUN }}
+          SERVICENOW_INCIDENT_API_PATH: ${{ secrets.SERVICENOW_INCIDENT_API_PATH }}
+          SERVICENOW_PASSWORD: ${{ secrets.SERVICENOW_PASSWORD }}
+          SERVICENOW_TOKEN_URL: ${{ secrets.SERVICENOW_TOKEN_URL }}
+          SERVICENOW_USERNAME: ${{ secrets.SERVICENOW_USERNAME }}
           TEAMS_WEBHOOK_URL: ${{ secrets.TEAMS_WEBHOOK_URL }}
-          SN_USERNAME: ${{ secrets.SN_USERNAME }}
-          SN_PASSWORD: ${{ secrets.SN_PASSWORD }}
-          CLIENT_AUTH: ${{ secrets.CLIENT_AUTH }}
         run: |
           python main.py
