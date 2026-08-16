@@ -50,8 +50,8 @@ jobs:
           SERVICENOW_PASSWORD: ${{ secrets.SERVICENOW_PASSWORD }}
           SERVICENOW_TOKEN_URL: ${{ secrets.SERVICENOW_TOKEN_URL }}
           SERVICENOW_USERNAME: ${{ secrets.SERVICENOW_USERNAME }}
-
           TEAMS_WEBHOOK_URL: ${{ secrets.TEAMS_WEBHOOK_URL }}
+          SERVICENOW_DRY_RUN: ${{ secrets.SERVICENOW_DRY_RUN }}
         run: |
           python main.py
 
